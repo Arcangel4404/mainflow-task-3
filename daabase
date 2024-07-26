@@ -1,0 +1,9 @@
+CREATE DATABASE UserAuthDB;
+
+USE UserAuthDB;
+
+CREATE TABLE UserAccounts (
+    userID INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    passwordHash VARCHAR(255) NOT NULL
+);
